@@ -4,7 +4,7 @@
 ![CleanShot 2022-04-21 at 16 20 49@2x](https://user-images.githubusercontent.com/80469971/164482237-c1641d33-239d-4ff9-b649-1513effdfa3b.png)
 
 ### 2. Select iCloud
-<img width="400" alt="CleanShot 2022-04-21 at 16 21 53@2x" src="https://user-images.githubusercontent.com/80469971/164482256-eec29b7b-2dc3-4fad-a116-847ed7dc343c.png">
+<img width="500" alt="CleanShot 2022-04-21 at 16 43 48@2x" src="https://user-images.githubusercontent.com/80469971/164483773-7c8252da-a655-47ba-862f-1c5f07c84335.png">
 
 ### 3. Settings + Adding Container
 ![CleanShot 2022-04-21 at 16 22 47@2x](https://user-images.githubusercontent.com/80469971/164482370-fec20665-b87f-44da-bb1e-4428650991f7.png)
