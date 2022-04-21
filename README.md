@@ -8,6 +8,8 @@ A place where I document different iOS related things
 
 ## iOS
 
+* [CloudKit - Get Started](https://github.com/HugoPrinsloo/iOS-Playground/blob/develop/iOS/CloudKit%20-%20Get%20started.md)
+
 ## Trouble Shooting
 * [CloudKit - Invalid bundle ID for container](https://github.com/HugoPrinsloo/iOS-Playground/blob/develop/Trouble%20Shooting/Cloudkit%20issues.md)
 
