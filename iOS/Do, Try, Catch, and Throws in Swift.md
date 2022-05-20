@@ -1,5 +1,4 @@
-# Do, Try, Catch, and Throws in Swift
-> Perform asynchronous and parallel operations.
+# Using Do, Try, Catch, and Throws in Swift
 
 ### Inside a data manager 
 
@@ -102,7 +101,7 @@ do {
 }
 ```
 
-If you don't care about the error then you could just mark `try` as optional and it will return an optional value
+#### If you don't care about the error then you could just mark `try` as optional and it will return an optional value
 ```swift
 let newTitle = try? manager.getTitle()
 text = newTitle ?? ""
