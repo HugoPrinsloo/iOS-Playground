@@ -16,6 +16,9 @@
 		6E55D1E328366FC8005F942E /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E55D1E228366FC8005F942E /* AttributedString.swift */; };
 		6E55D1E728367872005F942E /* Markdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E55D1E628367872005F942E /* Markdown.swift */; };
 		6E55D1EA28378328005F942E /* ConcurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E55D1E928378328005F942E /* ConcurrencyView.swift */; };
+		6EB3967F2837987000D054B7 /* AsyncAwaitView 1.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB3967E2837987000D054B7 /* AsyncAwaitView 1.0.swift */; };
+		6EB396872837BDB000D054B7 /* AsyncAwait 2.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB396862837BDB000D054B7 /* AsyncAwait 2.0.swift */; };
+		6EB396892837CD9600D054B7 /* AsyncPlayground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB396882837CD9600D054B7 /* AsyncPlayground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		6E55D1E228366FC8005F942E /* AttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedString.swift; sourceTree = "<group>"; };
 		6E55D1E628367872005F942E /* Markdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Markdown.swift; sourceTree = "<group>"; };
 		6E55D1E928378328005F942E /* ConcurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyView.swift; sourceTree = "<group>"; };
+		6EB3967E2837987000D054B7 /* AsyncAwaitView 1.0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AsyncAwaitView 1.0.swift"; sourceTree = "<group>"; };
+		6EB396862837BDB000D054B7 /* AsyncAwait 2.0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AsyncAwait 2.0.swift"; sourceTree = "<group>"; };
+		6EB396882837CD9600D054B7 /* AsyncPlayground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncPlayground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,9 @@
 			isa = PBXGroup;
 			children = (
 				6E55D1E928378328005F942E /* ConcurrencyView.swift */,
+				6EB3967E2837987000D054B7 /* AsyncAwaitView 1.0.swift */,
+				6EB396862837BDB000D054B7 /* AsyncAwait 2.0.swift */,
+				6EB396882837CD9600D054B7 /* AsyncPlayground.swift */,
 			);
 			path = "Swift Concurrency";
 			sourceTree = "<group>";
@@ -161,11 +170,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E0428982836478100C73F85 /* ScrollableVStack.swift in Sources */,
+				6EB396892837CD9600D054B7 /* AsyncPlayground.swift in Sources */,
 				6E04288A28363D8200C73F85 /* LoginForm.swift in Sources */,
 				6E55D1EA28378328005F942E /* ConcurrencyView.swift in Sources */,
 				6E55D1E328366FC8005F942E /* AttributedString.swift in Sources */,
 				6E0428962836464900C73F85 /* AsyncImageLoading.swift in Sources */,
 				6E55D1E728367872005F942E /* Markdown.swift in Sources */,
+				6EB396872837BDB000D054B7 /* AsyncAwait 2.0.swift in Sources */,
+				6EB3967F2837987000D054B7 /* AsyncAwaitView 1.0.swift in Sources */,
 				6E04288828363D8200C73F85 /* Playground_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
