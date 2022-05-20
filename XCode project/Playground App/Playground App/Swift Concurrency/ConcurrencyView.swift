@@ -18,7 +18,7 @@ class DoCatchTryThrowsDataManager {
             return (nil, URLError(.badURL))
         }
     }
-    
+
     // Better way using Result
     func getTitleWithResult() -> Result<String, Error> {
         if isActive {
@@ -45,7 +45,6 @@ class DoCatchTryThrowsDataManager {
     }
 
 }
-
 class DoCatchTryThrowsViewModel: ObservableObject {
     
     @Published var text: String = "Starting text."
@@ -96,6 +95,8 @@ class DoCatchTryThrowsViewModel: ObservableObject {
         }
     }
 }
+
+
 
 struct DoCatchTryThrowsView: View {
     
