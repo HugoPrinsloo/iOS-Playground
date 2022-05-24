@@ -7,29 +7,19 @@
 
 import SwiftUI
 
-
-
-
 class AsyncTaskViewModel: ObservableObject {
-    let url = "https://picsum.photos/3000"
+    let url = "https://picsum.photos/5000"
+    
     @Published var image: UIImage? = nil
-    @Published var image2: UIImage? = nil
-
+    
     func fetchImage() async {
         do {
             guard let url = URL(string: url) else { return }
             let (data, _) = try await URLSession.shared.data(from: url)
-            image = UIImage(data: data)
-        } catch {
-            print(error.localizedDescription)
-        }
-    }
-    
-    func fetchImage2() async {
-        do {
-            guard let url = URL(string: url) else { return }
-            let (data, _) = try await URLSession.shared.data(from: url)
-            image2 = UIImage(data: data)
+            await MainActor.run {
+                image = UIImage(data: data)
+                print("📝 AsyncTaskViewModel - Image Downloaded")
+            }
         } catch {
             print(error.localizedDescription)
         }
@@ -38,6 +28,9 @@ class AsyncTaskViewModel: ObservableObject {
 
 struct AsyncTaskView: View {
     @StateObject private var viewModel = AsyncTaskViewModel()
+    
+    @State private var task: Task<(), Never>?
+    
     var body: some View {
         VStack(spacing: 40) {
             if let image = viewModel.image {
@@ -45,23 +38,23 @@ struct AsyncTaskView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 300)
+            } else {
+                ProgressView()
             }
-            if let image2 = viewModel.image2 {
-                Image(uiImage: image2)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 300)
-            }
-
         }.onAppear {
-            
-            Task {
+            task = Task(priority: .high) {
                 await viewModel.fetchImage()
-                await viewModel.fetchImage2()
             }
         }
+        .onDisappear {
+            task?.cancel()
+        }
+        
     }
 }
+
+
+
 
 struct AsyncTaskView_Previews: PreviewProvider {
     static var previews: some View {
@@ -70,3 +63,4 @@ struct AsyncTaskView_Previews: PreviewProvider {
             .previewLayout(.sizeThatFits)
     }
 }
+

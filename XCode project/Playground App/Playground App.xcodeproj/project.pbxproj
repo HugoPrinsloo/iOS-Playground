@@ -13,6 +13,7 @@
 		6E04288F28363D8300C73F85 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E04288E28363D8300C73F85 /* Preview Assets.xcassets */; };
 		6E0428962836464900C73F85 /* AsyncImageLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0428952836464900C73F85 /* AsyncImageLoading.swift */; };
 		6E0428982836478100C73F85 /* ScrollableVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0428972836478100C73F85 /* ScrollableVStack.swift */; };
+		6E385F47283D259B00B2F31B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E385F46283D259B00B2F31B /* HomeView.swift */; };
 		6E55D1E328366FC8005F942E /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E55D1E228366FC8005F942E /* AttributedString.swift */; };
 		6E55D1E728367872005F942E /* Markdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E55D1E628367872005F942E /* Markdown.swift */; };
 		6E55D1EA28378328005F942E /* ConcurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E55D1E928378328005F942E /* ConcurrencyView.swift */; };
@@ -30,6 +31,7 @@
 		6E04288E28363D8300C73F85 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6E0428952836464900C73F85 /* AsyncImageLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageLoading.swift; sourceTree = "<group>"; };
 		6E0428972836478100C73F85 /* ScrollableVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableVStack.swift; sourceTree = "<group>"; };
+		6E385F46283D259B00B2F31B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		6E55D1E228366FC8005F942E /* AttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedString.swift; sourceTree = "<group>"; };
 		6E55D1E628367872005F942E /* Markdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Markdown.swift; sourceTree = "<group>"; };
 		6E55D1E928378328005F942E /* ConcurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyView.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				6E04288728363D8200C73F85 /* Playground_AppApp.swift */,
+				6E385F46283D259B00B2F31B /* HomeView.swift */,
 				6E0428972836478100C73F85 /* ScrollableVStack.swift */,
 				6E04288928363D8200C73F85 /* LoginForm.swift */,
 				6E0428952836464900C73F85 /* AsyncImageLoading.swift */,
@@ -181,6 +184,7 @@
 				6E55D1E728367872005F942E /* Markdown.swift in Sources */,
 				6EB396872837BDB000D054B7 /* AsyncAwait 2.0.swift in Sources */,
 				6EB3967F2837987000D054B7 /* AsyncAwaitView 1.0.swift in Sources */,
+				6E385F47283D259B00B2F31B /* HomeView.swift in Sources */,
 				6EB3968B2837DBBA00D054B7 /* AsyncTaskView.swift in Sources */,
 				6E04288828363D8200C73F85 /* Playground_AppApp.swift in Sources */,
 			);
