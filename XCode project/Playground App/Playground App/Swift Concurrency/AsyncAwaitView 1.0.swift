@@ -63,6 +63,8 @@ class DownloadImageAsyncViewModel: ObservableObject {
     
 }
 
+
+
 struct AsyncAwaitView: View {
     
     @StateObject private var viewModel = DownloadImageAsyncViewModel()
@@ -94,3 +96,4 @@ struct AsyncAwaitView_Previews: PreviewProvider {
             .previewLayout(.sizeThatFits)
     }
 }
+

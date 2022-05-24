@@ -19,6 +19,7 @@
 		6EB3967F2837987000D054B7 /* AsyncAwaitView 1.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB3967E2837987000D054B7 /* AsyncAwaitView 1.0.swift */; };
 		6EB396872837BDB000D054B7 /* AsyncAwait 2.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB396862837BDB000D054B7 /* AsyncAwait 2.0.swift */; };
 		6EB396892837CD9600D054B7 /* AsyncPlayground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB396882837CD9600D054B7 /* AsyncPlayground.swift */; };
+		6EB3968B2837DBBA00D054B7 /* AsyncTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB3968A2837DBBA00D054B7 /* AsyncTaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		6EB3967E2837987000D054B7 /* AsyncAwaitView 1.0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AsyncAwaitView 1.0.swift"; sourceTree = "<group>"; };
 		6EB396862837BDB000D054B7 /* AsyncAwait 2.0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AsyncAwait 2.0.swift"; sourceTree = "<group>"; };
 		6EB396882837CD9600D054B7 /* AsyncPlayground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncPlayground.swift; sourceTree = "<group>"; };
+		6EB3968A2837DBBA00D054B7 /* AsyncTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncTaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				6EB3967E2837987000D054B7 /* AsyncAwaitView 1.0.swift */,
 				6EB396862837BDB000D054B7 /* AsyncAwait 2.0.swift */,
 				6EB396882837CD9600D054B7 /* AsyncPlayground.swift */,
+				6EB3968A2837DBBA00D054B7 /* AsyncTaskView.swift */,
 			);
 			path = "Swift Concurrency";
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				6E55D1E728367872005F942E /* Markdown.swift in Sources */,
 				6EB396872837BDB000D054B7 /* AsyncAwait 2.0.swift in Sources */,
 				6EB3967F2837987000D054B7 /* AsyncAwaitView 1.0.swift in Sources */,
+				6EB3968B2837DBBA00D054B7 /* AsyncTaskView.swift in Sources */,
 				6E04288828363D8200C73F85 /* Playground_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
