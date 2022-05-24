@@ -19,7 +19,7 @@ func fetchImage() async throws -> UIImage? {
 let newImage = try? await loader.fetchImage()
 ```
 
-#### Async functions don't have to return something
+### Async functions don't have to return something
 > This function downloads the image and sets a local property once completed
 
 ```swift
