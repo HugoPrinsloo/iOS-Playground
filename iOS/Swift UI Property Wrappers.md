@@ -21,7 +21,7 @@ ___
 
 The `@State` property wrapper is used inside of `View` objects and allows your view to respond to any changes made to `@State`. You use `@State` for properties that are owned by the view that it's contained in. In other words, a view initializes its `@State` properties itself. It does not receive its `@State` properties from another object.
 
-```
+```swift
 struct StateExample: View {
   @State private var intValue = 0
 
@@ -57,7 +57,7 @@ ___
 
 The `@Binding` property wrapper is used for properties that are passed by another view. The view that receives the binding is able to read the bound property, respond to changes made by external sources (like the parent view), and it has write access to the property. Meaning that updating a `@Binding` updates the corresponding property on the view that provided the `@Binding`.
 
-```
+```swift
 struct BindingView: View {
   @Binding var intValue: Int
 
@@ -73,7 +73,7 @@ struct BindingView: View {
 
 This is an example of a view that receives a `Binding` and modifies it what a user taps a button. You would use this view as follows:
 
-```
+```swift
 struct StateView: View {
   @State private var intValue = 0
 
@@ -117,7 +117,7 @@ ___
 
 The `@StateObject` property is used for similar reasons as `@State`, except it's applied to `ObservableObject`s. An `ObservableObject` is always a reference type (`class`) and informs SwiftUI whenever one of its `@Published` properties will change.
 
-```
+```swift
 class DataProvider: ObservableObject {
   @Published var currentValue = "a value"
 }
@@ -154,7 +154,7 @@ ___
 
 An `@ObservedObject` is used to wrap `ObservableObject` instances that are not created or owned by the view that's used in. It's applied to the same types of objects as `@StateObject`, and it provides similar features, except a view doesn't create its own `@ObservedObject` instances. Instead, they are passed down to views like this:
 
-```
+```swift
 struct DataOwnerView: View {
   @StateObject private var provider = DataProvider()
 
@@ -197,7 +197,7 @@ Sometimes you have objects that are needed in various places in your app, and yo
 
 You can achieve this with `@EnvironmentObject`:
 
-```
+```swift
 struct EnvironmentUsingView: View {
   @EnvironmentObject var dependency: DataProvider
 
@@ -209,7 +209,7 @@ struct EnvironmentUsingView: View {
 
 Properties that are marked as `@EnvironmentObject` must conform to `ObservableObject`. They are configured by a parent object of the object that uses the `@EnvironmentObject`. So for example, we can inject an environment object from the `App` struct to make it available for us in all views that we create:
 
-```
+```swift
 struct MyApp: App {
   @StateObject var dataProvider = DataProvider()
 
@@ -236,7 +236,7 @@ The `@Environment` property wrapper is similar to `@EnvironmentObject` with one 
 
 You can read a value from the environment as follows:
 
-```
+```swift
 struct MyView: App {
   @Environment(\.colorScheme) var colorScheme: ColorScheme
 
@@ -248,14 +248,14 @@ struct MyView: App {
 
 To assign a value to a view's environment you'd write the following:
 
-```
+```swift
 ContentView()
     .environment(\.managedObjectContext, Persistence.shared.viewContext)
 ```
 
 You can add a custom property to your view's environment as follows:
 
-```
+```swift
 // The type we want to use for the custom environment value
 enum AppStyle {
     case classic, modern
@@ -298,7 +298,7 @@ You should use `@Environment` if:
 
 Fetch request is one of SwiftUI's persistence related property wrappers. You use it to retrieve data from Core Data. A brief example of how to use this property wrapper looks as follows:
 
-```
+```swift
 struct ContentView: View {
     @FetchRequest(fetchRequest: MyModel.fetchRequest())
     var items: MyModel
@@ -325,7 +325,7 @@ The `@AppStorage` property wrapper is an app-wide wrapper around `UserDefaults`.
 
 Here's a simple example of using `@AppStorage`:
 
-```
+```swift
 struct ContentView: View {
     @AppStorage("lastTap") var lastTap: Double?
 
@@ -365,7 +365,7 @@ You should only use scene storage for state related data that's non-essential to
 
 You use `@SceneStorage` in a similar manner as `@AppStorage`:
 
-```
+```swift
 struct ContentView: View {
     @SceneStorage("lastTap") var lastTap: Double?
 
