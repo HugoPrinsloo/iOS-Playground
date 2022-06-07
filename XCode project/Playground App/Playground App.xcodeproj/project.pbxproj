@@ -15,9 +15,11 @@
 		6E0428982836478100C73F85 /* ScrollableVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0428972836478100C73F85 /* ScrollableVStack.swift */; };
 		6E385F47283D259B00B2F31B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E385F46283D259B00B2F31B /* HomeView.swift */; };
 		6E385F49283E26A300B2F31B /* AsyncLet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E385F48283E26A300B2F31B /* AsyncLet.swift */; };
+		6E3E0D772846495B008BD014 /* SessionWithMisch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3E0D762846495B008BD014 /* SessionWithMisch.swift */; };
 		6E55D1E328366FC8005F942E /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E55D1E228366FC8005F942E /* AttributedString.swift */; };
 		6E55D1E728367872005F942E /* Markdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E55D1E628367872005F942E /* Markdown.swift */; };
 		6E55D1EA28378328005F942E /* ConcurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E55D1E928378328005F942E /* ConcurrencyView.swift */; };
+		6E860421284767AF007A9F87 /* DoCatchExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E860420284767AF007A9F87 /* DoCatchExample.swift */; };
 		6EB3967F2837987000D054B7 /* AsyncAwaitView 1.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB3967E2837987000D054B7 /* AsyncAwaitView 1.0.swift */; };
 		6EB396872837BDB000D054B7 /* AsyncAwait 2.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB396862837BDB000D054B7 /* AsyncAwait 2.0.swift */; };
 		6EB396892837CD9600D054B7 /* AsyncPlayground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB396882837CD9600D054B7 /* AsyncPlayground.swift */; };
@@ -34,9 +36,11 @@
 		6E0428972836478100C73F85 /* ScrollableVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableVStack.swift; sourceTree = "<group>"; };
 		6E385F46283D259B00B2F31B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		6E385F48283E26A300B2F31B /* AsyncLet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncLet.swift; sourceTree = "<group>"; };
+		6E3E0D762846495B008BD014 /* SessionWithMisch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionWithMisch.swift; sourceTree = "<group>"; };
 		6E55D1E228366FC8005F942E /* AttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedString.swift; sourceTree = "<group>"; };
 		6E55D1E628367872005F942E /* Markdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Markdown.swift; sourceTree = "<group>"; };
 		6E55D1E928378328005F942E /* ConcurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyView.swift; sourceTree = "<group>"; };
+		6E860420284767AF007A9F87 /* DoCatchExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoCatchExample.swift; sourceTree = "<group>"; };
 		6EB3967E2837987000D054B7 /* AsyncAwaitView 1.0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AsyncAwaitView 1.0.swift"; sourceTree = "<group>"; };
 		6EB396862837BDB000D054B7 /* AsyncAwait 2.0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AsyncAwait 2.0.swift"; sourceTree = "<group>"; };
 		6EB396882837CD9600D054B7 /* AsyncPlayground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncPlayground.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 				6E0428952836464900C73F85 /* AsyncImageLoading.swift */,
 				6E55D1E228366FC8005F942E /* AttributedString.swift */,
 				6E55D1E628367872005F942E /* Markdown.swift */,
+				6E3E0D762846495B008BD014 /* SessionWithMisch.swift */,
+				6E860420284767AF007A9F87 /* DoCatchExample.swift */,
 				6E55D1E828378302005F942E /* Swift Concurrency */,
 				6E04288B28363D8300C73F85 /* Assets.xcassets */,
 				6E04288D28363D8300C73F85 /* Preview Content */,
@@ -178,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E860421284767AF007A9F87 /* DoCatchExample.swift in Sources */,
 				6E0428982836478100C73F85 /* ScrollableVStack.swift in Sources */,
 				6EB396892837CD9600D054B7 /* AsyncPlayground.swift in Sources */,
 				6E04288A28363D8200C73F85 /* LoginForm.swift in Sources */,
@@ -191,6 +198,7 @@
 				6E385F49283E26A300B2F31B /* AsyncLet.swift in Sources */,
 				6EB3968B2837DBBA00D054B7 /* AsyncTaskView.swift in Sources */,
 				6E04288828363D8200C73F85 /* Playground_AppApp.swift in Sources */,
+				6E3E0D772846495B008BD014 /* SessionWithMisch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

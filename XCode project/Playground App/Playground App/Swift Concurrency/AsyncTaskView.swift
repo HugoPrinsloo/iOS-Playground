@@ -8,7 +8,7 @@
 import SwiftUI
 
 class AsyncTaskViewModel: ObservableObject {
-    let url = "https://picsum.photos/5000"
+    let url = "https://picsum.photos/2000"
     
     @Published var image: UIImage? = nil
     
