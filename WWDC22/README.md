@@ -7,4 +7,4 @@
 * [📢 State of the Union](https://github.com/HugoPrinsloo/iOS-Playground/blob/develop/WWDC22/StateOfTheUnion.md)
 * [👨🏻‍🎨 What's new in SwiftUI](https://github.com/HugoPrinsloo/iOS-Playground/blob/develop/WWDC22/WhatsNewInSwiftUI.md)
 * [📐 Compose custom Layouts with SwiftUI](https://github.com/HugoPrinsloo/iOS-Playground/blob/develop/WWDC22/ComposeCustomLayoutswithSwiftUI.md)
-
+* [🎨 What's new in UIKit](https://github.com/HugoPrinsloo/iOS-Playground/blob/develop/WWDC22/WhatsNewInUIKit.md) 
