@@ -44,7 +44,6 @@ struct SwitchingLayoutsUsingIfStatement: View {
                 }
                 .frame(maxHeight: .infinity)
                 .animation(.default.speed(0.5), value: layoutOption)
-                .border(.primary)
             } else {
                 VStack {
                     ForEach(ColorManager.colors) { color in
@@ -53,7 +52,6 @@ struct SwitchingLayoutsUsingIfStatement: View {
                 }
                 .frame(maxHeight: .infinity)
                 .animation(.default.speed(0.5), value: layoutOption)
-                .border(.primary)
             }
         }
     }
@@ -83,7 +81,6 @@ struct SwitchingLayouts: View {
                 }
             }
             .frame(maxHeight: .infinity)
-            .border(.primary)
             .animation(.default.speed(0.5), value: layoutOption)
         }
     }
@@ -198,6 +195,9 @@ class ColorManager {
         ColorItem(title: "#F24C4C", hex: "F24C4C"),
         ColorItem(title: "#EC9B3B", hex: "EC9B3B"),
         ColorItem(title: "#F7D716", hex: "F7D716"),
+        ColorItem(title: "#000000", hex: "000000"),
+        ColorItem(title: "#1A4D2E", hex: "1A4D2E"),
+        ColorItem(title: "#FF9F29", hex: "FF9F29"),
     ]
     
 }
