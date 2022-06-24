@@ -8,21 +8,56 @@
 import SwiftUI
 
 
-struct HomeView: View {
-    var body: some View {
-        NavigationView {
-            List {
-                NavigationLink("Login Form", destination: LoginForm())
-                NavigationLink("AsyncImageLoading", destination: AsyncImageLoading())
-                NavigationLink("AttributedStringView", destination: AttributedStringView())
-                NavigationLink("DoCatchTryThrowsView", destination: DoCatchTryThrowsView())
-                NavigationLink("AsyncTaskView", destination: AsyncTaskView())
-                NavigationLink("Async Let", destination: AsyncLetView())
-                NavigationLink("Image Grid View", destination: BuildingAPhotoGrid_SquareGridCells())
-                NavigationLink("Structured Concurrency Part 1", destination: Structured_Concurrency__Part_1_())
+enum Category: String, CaseIterable {
+    case swiftUI = "SwiftUI"
+    case asyncAwait = "Async await"
+}
 
+struct Demo: Identifiable {
+    let title: String
+    let section: Category
+    let destinationView: any View
+        
+    var id: String {
+        return self.title
+    }
+}
+
+struct HomeView: View {
+    
+    private let itemsToShow: [Demo] = [
+        Demo(title: "TextField updates (iOS16)", section: .swiftUI, destinationView: LoginForm()),
+        Demo(title: "AsyncImageLoading", section: .asyncAwait, destinationView: AsyncImageLoading()),
+        Demo(title: "AttributedStringView", section: .swiftUI, destinationView: AttributedStringView()),
+        Demo(title: "DoCatchTryThrowsView", section: .asyncAwait, destinationView: DoCatchTryThrowsView()),
+        Demo(title: "AsyncTaskView", section: .asyncAwait, destinationView: AsyncTaskView()),
+        Demo(title: "Async Let", section: .asyncAwait, destinationView: AsyncLetView()),
+        Demo(title: "Image Grid View", section: .swiftUI, destinationView: BuildingAPhotoGrid_SquareGridCells()),
+        Demo(title: "Structured Concurrency Part 1", section: .asyncAwait, destinationView: Structured_Concurrency__Part_1_()),
+    ]
+        
+    var body: some View {
+        NavigationStack {
+            List {
+                ForEach(Category.allCases, id: \.self) { category in
+                    Section(category.rawValue) {
+                        ForEach(demos(for: category)) { demo in
+                            NavigationLink(demo.title, destination: destination(for: demo))
+                        }
+                    }
+                }
             }
             .navigationTitle("Playground")
+        }
+    }
+    
+    private func demos(for section: Category) -> [Demo] {
+        return itemsToShow.filter { $0.section == section }
+    }
+    
+    private func destination(for demo: Demo) -> some View {
+        VStack {
+            AnyView(demo.destinationView)
         }
     }
 }
