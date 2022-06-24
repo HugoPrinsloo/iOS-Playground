@@ -10,6 +10,8 @@ import SwiftUI
 enum LayoutOption: String, CaseIterable, Identifiable {
     case vstack
     case hstack
+    case zstack
+    case circle
     
     var id: Self { self }
     
@@ -17,6 +19,8 @@ enum LayoutOption: String, CaseIterable, Identifiable {
         switch self {
         case .vstack: return VStack()
         case .hstack: return HStack()
+        case .zstack: return _ZStackLayout()
+        case .circle: return _CircleLayout(radius: 100)
         }
     }
 }

@@ -20,6 +20,7 @@
 		6E55D1E328366FC8005F942E /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E55D1E228366FC8005F942E /* AttributedString.swift */; };
 		6E55D1E728367872005F942E /* Markdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E55D1E628367872005F942E /* Markdown.swift */; };
 		6E55D1EA28378328005F942E /* ConcurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E55D1E928378328005F942E /* ConcurrencyView.swift */; };
+		6E6008FA286592EA00883E2C /* BuildingAPhotoGrid-SquareGridCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6008F9286592EA00883E2C /* BuildingAPhotoGrid-SquareGridCells.swift */; };
 		6E860421284767AF007A9F87 /* DoCatchExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E860420284767AF007A9F87 /* DoCatchExample.swift */; };
 		6EB3967F2837987000D054B7 /* AsyncAwaitView 1.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB3967E2837987000D054B7 /* AsyncAwaitView 1.0.swift */; };
 		6EB396872837BDB000D054B7 /* AsyncAwait 2.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB396862837BDB000D054B7 /* AsyncAwait 2.0.swift */; };
@@ -42,6 +43,7 @@
 		6E55D1E228366FC8005F942E /* AttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedString.swift; sourceTree = "<group>"; };
 		6E55D1E628367872005F942E /* Markdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Markdown.swift; sourceTree = "<group>"; };
 		6E55D1E928378328005F942E /* ConcurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyView.swift; sourceTree = "<group>"; };
+		6E6008F9286592EA00883E2C /* BuildingAPhotoGrid-SquareGridCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BuildingAPhotoGrid-SquareGridCells.swift"; sourceTree = "<group>"; };
 		6E860420284767AF007A9F87 /* DoCatchExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoCatchExample.swift; sourceTree = "<group>"; };
 		6EB3967E2837987000D054B7 /* AsyncAwaitView 1.0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AsyncAwaitView 1.0.swift"; sourceTree = "<group>"; };
 		6EB396862837BDB000D054B7 /* AsyncAwait 2.0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AsyncAwait 2.0.swift"; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				6E860420284767AF007A9F87 /* DoCatchExample.swift */,
 				6E55D1E828378302005F942E /* Swift Concurrency */,
 				6E0B438828647481005D3E3D /* SwitchingLayouts.swift */,
+				6E6008F9286592EA00883E2C /* BuildingAPhotoGrid-SquareGridCells.swift */,
 				6E04288B28363D8300C73F85 /* Assets.xcassets */,
 				6E04288D28363D8300C73F85 /* Preview Content */,
 			);
@@ -188,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E860421284767AF007A9F87 /* DoCatchExample.swift in Sources */,
+				6E6008FA286592EA00883E2C /* BuildingAPhotoGrid-SquareGridCells.swift in Sources */,
 				6E0428982836478100C73F85 /* ScrollableVStack.swift in Sources */,
 				6E0B438928647481005D3E3D /* SwitchingLayouts.swift in Sources */,
 				6EB396892837CD9600D054B7 /* AsyncPlayground.swift in Sources */,

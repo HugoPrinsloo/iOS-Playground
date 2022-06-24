@@ -18,6 +18,7 @@ struct HomeView: View {
                 NavigationLink("DoCatchTryThrowsView", destination: DoCatchTryThrowsView())
                 NavigationLink("AsyncTaskView", destination: AsyncTaskView())
                 NavigationLink("Async Let", destination: AsyncLetView())
+                NavigationLink("Image Grid View", destination: BuildingAPhotoGrid_SquareGridCells())
 
             }
             .navigationTitle("Playground")
