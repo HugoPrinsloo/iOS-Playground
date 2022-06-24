@@ -19,6 +19,7 @@ struct HomeView: View {
                 NavigationLink("AsyncTaskView", destination: AsyncTaskView())
                 NavigationLink("Async Let", destination: AsyncLetView())
                 NavigationLink("Image Grid View", destination: BuildingAPhotoGrid_SquareGridCells())
+                NavigationLink("Structured Concurrency Part 1", destination: Structured_Concurrency__Part_1_())
 
             }
             .navigationTitle("Playground")

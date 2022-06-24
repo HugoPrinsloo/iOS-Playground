@@ -68,3 +68,4 @@ struct BuildingAPhotoGrid_SquareGridCells_Previews: PreviewProvider {
         BuildingAPhotoGrid_SquareGridCells()
     }
 }
+ 
