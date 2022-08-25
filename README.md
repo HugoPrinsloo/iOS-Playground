@@ -25,6 +25,7 @@ A place where I document different iOS related things
 
 ### Helpful links
 * [💁🏻‍♂️ iOS Starter kit](https://github.com/jrasmusson/ios-starter-kit)
+* [✨ Generate Structs from JSON](https://app.quicktype.io)
 
 
 
